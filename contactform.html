@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="assets/css/foundation.css">
+<script src="foundation.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+
+<!--creating a side navbar-->
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<link rel="stylesheet" href="assets/css/navbar.css">
+<script src="foundation.js"></script>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="productpage.html">Product gallery</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="contactform.html">Contact Form</a>
+  
+  
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+    <div class="orbit" role="region" aria-label="Foundation 6 Carousel" id="example" data-orbit>
+        <ul class="orbit-container" >
+          <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+          <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+          <li class="orbit-slide is-active slide-1">
+            <img class="orbit-image" src="Images/carousel1.jpg" alt="slide one" />
+            <div class="orbit-slide-content">
+              <h2>George's Garden Shop</h2>
+              <p>Best Garden for your Gnome.</p>
+            </div>
+            <figcaption class="orbit-caption text-center">Slide One.</figcaption>
+          </li>
+          <li class="orbit-slide slide-2">
+            <img class="orbit-image" src="Images/carousel3.jpg" alt="slide two" />
+            <div class="orbit-slide-content">
+              <h2>George's Garden Shop</h2>
+              <p>Best Garden for your Gnome.</p>
+            </div>
+            <figcaption class="orbit-caption text-center">Slide Two.</figcaption>
+          </li>
+          <li class="orbit-slide slide-3">
+            <img class="orbit-image" src="Images/carousel3.jpg" alt="slide three"/>
+            <div class="orbit-slide-content">
+              <h2>George's Garden Shop</h2>
+              <p>Best Garden for your Gnome.</p>
+            </div>
+            <figcaption class="orbit-caption text-center">Slide Three.</figcaption>
+          </li>
+        </ul>
+        <nav class="orbit-bullets">
+          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+        </nav>
+      </div>
+
+
+
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+
+
+  <!--Social Media footer-->
+  <footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="social-wrapper">
+      <ul>
+        <li>
+          <a href="#" target="_blank">
+            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Twitter Logo" class="twitter-icon"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="https://www.mchenryvillage.com/images/instagram-icon.png" alt="Instagram Logo" class="instagram-icon"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico" alt="Facebook Logo" class="facebook-icon"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="http://icons.iconarchive.com/icons/marcus-roberto/google-play/256/Google-plus-icon.png" alt="Googleplus Logo" class="googleplus-icon"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="https://lh3.googleusercontent.com/j_RwVcM9d47aBDW5DS1VkdxUYCkDUCB6wZglv4x-9SmsxO0VaFs7Csh-FmKRCWz9r_Ef=w170" alt="Youtube Logo" class="youtube-icon"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="http://www.iconarchive.com/download/i94258/designbolts/vector-foursquare/Foursquare-2.ico" alt="Foursquare Logo" class="foursquare-icon"></a>
+        </li>
+      </ul>
+    </div>
+  
+    <nav class="footer-nav" role="navigation">
+      <p>Copyright &copy; 2021-
+        <?php echo date("Y"); ?> George's Garden Centre. All rights reserved.</p>
+    </nav>
+  </footer>
+
+
+
+<script src="assets/js/vendor.js"></script>
+<script src="assets/js/foundation.js"></script>
+
+
+
+</body>
+</html>

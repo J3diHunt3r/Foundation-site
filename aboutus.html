@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="assets/css/foundation.css">
+<script src="foundation.js"></script>
+</head>
+<body>
+<!--creating a side navbar-->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <script src="foundation.js"></script>
+    
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="productpage.html">Product gallery</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactform.html">Contact Form</a>
+      
+      
+    </div>
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+
+
+    <div class="about-section">
+      <h1>About Us</h1>
+      <p>Get to know us.</p>
+    </div>
+    
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/w3images/team1.jpg" alt="G-Junior" style="width:100%">
+          <div class="container">
+            <h2>George Junior</h2>
+            <p class="title">CFO & Co-Founder</p>
+            <p>Son of George, G Junior graduated with a bachelors in finance and now runs the books for the company. He has come a long way and wants to ensure the business continues to strive. He also runs a freelancing accounting firm where he occassionally helps out other smaller businesses.</p>
+            <p>GJuniorGC@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="/w3images/team2.jpg" alt="George" style="width:100%">
+          <div class="container">
+            <h2>George Gardens</h2>
+            <p class="title">Founder and CEO</p>
+            <p>George had founded this Garden company in the early first quarter of 2019. What started as just a garage sale turned into one of the biggest Agricultural companies to exist. George now has over 3 factories nation wide and runs it with his 2 sons</p>
+            <p>GeorgeGC@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <img src="/w3images/team3.jpg" alt="Carl" style="width:100%">
+          <div class="container">
+            <h2>Carl Haricombe</h2>
+            <p class="title">Web Developer and Marketer</p>
+            <p>Carl had designed the full website for the firm and runs the marketing team and all the firms social accounts. He ensured that they are all connected with one another and that the website is accessible to all clients and allows them to feel welcomed and at home.</p>
+            <p>CarlHaricombe@developers.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </body>
+
+  <!--Social Media footer-->
+  <footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="social-wrapper">
+      <ul>
+        <li>
+          <a href="#" target="_blank">
+            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Twitter Logo" class="twitter-icon"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="https://www.mchenryvillage.com/images/instagram-icon.png" alt="Instagram Logo" class="instagram-icon"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico" alt="Facebook Logo" class="facebook-icon"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="http://icons.iconarchive.com/icons/marcus-roberto/google-play/256/Google-plus-icon.png" alt="Googleplus Logo" class="googleplus-icon"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="https://lh3.googleusercontent.com/j_RwVcM9d47aBDW5DS1VkdxUYCkDUCB6wZglv4x-9SmsxO0VaFs7Csh-FmKRCWz9r_Ef=w170" alt="Youtube Logo" class="youtube-icon"></a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="http://www.iconarchive.com/download/i94258/designbolts/vector-foursquare/Foursquare-2.ico" alt="Foursquare Logo" class="foursquare-icon"></a>
+        </li>
+      </ul>
+    </div>
+  
+    <nav class="footer-nav" role="navigation">
+      <p>Copyright &copy; 2021-
+        <?php echo date("Y"); ?> George's Garden Centre. All rights reserved.</p>
+    </nav>
+  </footer>
+
+
+
+    </html>
+    

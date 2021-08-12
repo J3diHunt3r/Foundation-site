@@ -1,0 +1,443 @@
+<!--Creating George's Garden Centre Foundation Website
+Carl Haricombe
+J276035
+Demonstarting:  #multi-page site 
+                #Video footage on page
+                #Carousel
+                #Pricing table with minimum 20 products
+                #Contact form
+                #Responsive site
+-->
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <script src="foundation.js"></script>
+  </head>
+  
+<body>
+
+<!--creating a side navbar-->
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<link rel="stylesheet" href="assets/css/navbar.css">
+<script src="foundation.js"></script>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="productpage.html">Product gallery</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="contactform.html">Contact Form</a>
+  
+  
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+  <div class="orbit" role="region" aria-label="Foundation 6 Carousel" id="example" data-orbit>
+    <ul class="orbit-container" >
+      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+      <li class="orbit-slide is-active slide-1">
+        <img class="orbit-image" src="Images/carousel1.jpg" alt="slide one" />
+        <div class="orbit-slide-content">
+          <h2>George's Garden Shop</h2>
+          <p>Best Garden for your Gnome.</p>
+        </div>
+        <figcaption class="orbit-caption text-center">Slide One.</figcaption>
+      </li>
+      <li class="orbit-slide slide-2">
+        <img class="orbit-image" src="Images/carousel3.jpg" alt="slide two" />
+        <div class="orbit-slide-content">
+          <h2>George's Garden Shop</h2>
+          <p>Best Garden for your Gnome.</p>
+        </div>
+        <figcaption class="orbit-caption text-center">Slide Two.</figcaption>
+      </li>
+      <li class="orbit-slide slide-3">
+        <img class="orbit-image" src="Images/carousel3.jpg" alt="slide three"/>
+        <div class="orbit-slide-content">
+          <h2>George's Garden Shop</h2>
+          <p>Best Garden for your Gnome.</p>
+        </div>
+        <figcaption class="orbit-caption text-center">Slide Three.</figcaption>
+      </li>
+    </ul>
+    <nav class="orbit-bullets">
+      <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+      <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+    </nav>
+  </div>
+
+
+<!--Creating the mini product and pricing  -->
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+          <h1>Welcome to the #1 Garden centre</h1>
+        </div>
+      </div>
+
+            <h3>Best Sellers this WEEK! </h3>
+            <div class="row align-center">
+              <div class="product-image-gallery">
+                <img class="pdp-product-image" id="main-product-image" src="https://placehold.it/350x350?text=Image+1" alt="">
+                <br>
+                <p><a href="#index">Plants</a></p>
+                <ul class="menu product-thumbs align-left">
+                  <div class="hover-table-layout">
+                    <div class="listing-item">
+                        <figure class="image">
+                            <img src="images/plants/florahostaplant.jfif" alt="image">
+                            <figcaption>
+                              <div class="caption">
+                                <h1>$110</h1>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="listing">
+                            <h4>Flora Hosta</h4>
+                        </div>
+                    </div>
+                    <div class="listing-item">
+                        <figure class="image">
+                            <img src="images/plants/aloeplant.jpg" alt="image">
+                            <figcaption>
+                               <div class="caption">
+                                <h1>$ 80</h1>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="listing">
+                            <h4>Aloe</h4>
+                        </div>
+                    </div>
+                    <div class="listing-item">
+                        <figure class="image">
+                            <img src="images/plants/proteaplant.jpg" alt="image">
+                            <figcaption>
+                               <div class="caption">
+                                <h1>$100</h1>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="listing">
+                            <h4>Protea</h4>
+                        </div>
+                    </div>
+                </div>
+                </ul>
+                </br>
+                <br>
+                <p><a href="#index">Pots</a></p>
+                <ul class="menu product-thumbs align-left">
+                  <div class="hover-table-layout">
+                    <div class="listing-item">
+                        <figure class="image">
+                            <img src="images/pots/pot1.jpg" alt="image">
+                            <figcaption>
+                              <div class="caption">
+                                <h1>$20</h1>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="listing">
+                            <h4>Single standard</h4>
+                        </div>
+                    </div>
+                    <div class="listing-item">
+                        <figure class="image">
+                            <img src="images/pots/set2.jpg" alt="image">
+                            <figcaption>
+                               <div class="caption">
+                                <h1>$ 100</h1>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="listing">
+                            <h4>Full small to medium set</h4>
+                        </div>
+                    </div>
+                    <div class="listing-item">
+                        <figure class="image">
+                            <img src="images/pots/set3.jpg" alt="image">
+                            <figcaption>
+                               <div class="caption">
+                                <h1>$160</h1>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="listing">
+                            <h4>Triple medium to large set</h4>
+                        </div>
+                    </div>
+                </div>
+                </ul>
+                </br>
+                <br>
+                <p><a href="#index">Gifts</a></p>
+                <ul class="menu product-thumbs align-left">
+                  <div class="hover-table-layout">
+                    <div class="listing-item">
+                        <figure class="image">
+                            <img src="images/gifts/fullworkkit.jfif" alt="image">
+                            <figcaption>
+                              <div class="caption">
+                                <h1>$750</h1>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="listing">
+                            <h4>Full work kit</h4>
+                        </div>
+                    </div>
+                    <div class="listing-item">
+                        <figure class="image">
+                            <img src="images/gifts/gardennotes.jfif" alt="image">
+                            <figcaption>
+                               <div class="caption">
+                                <h1>$ 80</h1>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="listing">
+                            <h4>Garden Notes</h4>
+                        </div>
+                    </div>
+                    <div class="listing-item">
+                        <figure class="image">
+                            <img src="images/gifts/veggiebasket.jpeg" alt="image">
+                            <figcaption>
+                               <div class="caption">
+                                <h1>$90</h1>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="listing">
+                            <h4>Veggie Basket</h4>
+                        </div>
+                    </div>
+                </div>
+                </ul>
+                </br>
+                <br>
+                <p><a href="#index">Garden Tools</a></p>
+                <ul class="menu product-thumbs align-left">
+                  <div class="hover-table-layout">
+                    <div class="listing-item">
+                        <figure class="image">
+                            <img src="images/tools/bigtoolset.jfif" alt="image">
+                            <figcaption>
+                              <div class="caption">
+                                <h1>$500</h1>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="listing">
+                            <h4>Large Tool set</h4>
+                        </div>
+                    </div>
+                    <div class="listing-item">
+                        <figure class="image">
+                            <img src="images/tools/fullhandset.jfif" alt="image">
+                            <figcaption>
+                               <div class="caption">
+                                <h1>$ 100</h1>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="listing">
+                            <h4>Full hand set</h4>
+                        </div>
+                    </div>
+                    <div class="listing-item">
+                        <figure class="image">
+                            <img src="images/tools/handforkandshovel.jpg" alt="image">
+                            <figcaption>
+                               <div class="caption">
+                                <h1>$60</h1>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="listing">
+                            <h4>Fork and shovel</h4>
+                        </div>
+                    </div>
+                </div>
+                </ul>
+                </br>
+                <br>
+                <p><a href="#index">Fertilisers</a></p>
+                <ul class="menu product-thumbs align-left">
+                  <div class="hover-table-layout">
+                    <div class="listing-item">
+                        <figure class="image">
+                            <img src="images/fertilisers/BaileysSoil.jpg" alt="image">
+                            <figcaption>
+                              <div class="caption">
+                                <h1>$40</h1>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="listing">
+                            <h4>Soft Soil</h4>
+                        </div>
+                    </div>
+                    <div class="listing-item">
+                        <figure class="image">
+                            <img src="images/fertilisers/BaileysSoil2.jpg" alt="image">
+                            <figcaption>
+                               <div class="caption">
+                                <h1>$ 45</h1>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="listing">
+                            <h4>Hard Soil</h4>
+                        </div>
+                    </div>
+                    <div class="listing-item">
+                        <figure class="image">
+                            <img src="images/fertilisers/Baileyssoil3.jpg" alt="image">
+                            <figcaption>
+                               <div class="caption">
+                                <h1>$25</h1>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <div class="listing">
+                            <h4>Vegetation soil</h4>
+                        </div>
+                    </div>
+                </div>
+                </ul>
+                </br>
+              </div>
+            </div>
+            
+
+      <div class="grid-x grid-padding-x">
+        <div class="large-8 medium-8 cell">
+          <h5>Disclaimer:</h5>
+          <!-- Grid Example -->
+
+          <div class="grid-x grid-padding-x">
+            <div class="large-12 cell">
+              <div class="primary callout">
+                <p><strong>All products above</strong> have been tested and certified through qualified Garden Centre Employees.</p>
+              </div>
+            </div>
+          </div>
+          
+
+          <hr />
+
+          <h5>Write a Review:</h5>
+          <form>
+            <div class="grid-x grid-padding-x">
+              <div class="large-12 cell">
+                <textarea placeholder="review"></textarea>
+              </div>
+            </div>
+            <div class="large-4 medium-4 cell">
+              <div class="grid-x">
+                <label>Email</label>
+                <div class="input-group">
+                  <input type="text" placeholder="Email" class="input-group-field" />
+                </div>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+              <div class="large-4 medium-4 cell">
+              </div>
+              <div class="large-4 medium-4 cell">
+              </div>
+            </div>
+            <p><a href="contactform.html" class="button">Submit</a><br/>
+            <!--
+            <div class="grid-x grid-padding-x">
+              <div class="large-12 cell">
+                <label>Select Box</label>
+                <select>
+                  <option value="husker">Husker</option>
+                  <option value="starbuck">Starbuck</option>
+                  <option value="hotdog">Hot Dog</option>
+                  <option value="apollo">Apollo</option>
+                </select>
+              </div>
+            </div>
+          -->
+
+          </form>
+        </div>
+
+        <div class="large-4 medium-4 cell">
+          <div class="callout">
+            <h5>Do you wanna stay updated!</h5>
+            <p>We enjoy updating to new products no matter what it is, we love staying with a specific niche but also ensure we are always offering products that are not harmful to the environment.</p>
+            <input type="text" placeholder="Email" class="input-group-field" />
+            <div class="input-group">
+              <a href="https://foundation.zurb.com/sites/docs/" class="small button">Receive our NewsLetters</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Social Media footer-->
+    <footer id="colophon" class="site-footer" role="contentinfo">
+      <div class="social-wrapper">
+        <ul>
+          <li>
+            <a href="#" target="_blank">
+              <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" alt="Twitter Logo" class="twitter-icon"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="https://www.mchenryvillage.com/images/instagram-icon.png" alt="Instagram Logo" class="instagram-icon"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="http://www.iconarchive.com/download/i54037/danleech/simple/facebook.ico" alt="Facebook Logo" class="facebook-icon"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="http://icons.iconarchive.com/icons/marcus-roberto/google-play/256/Google-plus-icon.png" alt="Googleplus Logo" class="googleplus-icon"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="https://lh3.googleusercontent.com/j_RwVcM9d47aBDW5DS1VkdxUYCkDUCB6wZglv4x-9SmsxO0VaFs7Csh-FmKRCWz9r_Ef=w170" alt="Youtube Logo" class="youtube-icon"></a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="http://www.iconarchive.com/download/i94258/designbolts/vector-foursquare/Foursquare-2.ico" alt="Foursquare Logo" class="foursquare-icon"></a>
+          </li>
+        </ul>
+      </div>
+    
+      <nav class="footer-nav" role="navigation">
+        <p>Copyright &copy; 2021-
+          <?php echo date("Y"); ?> George's Garden Centre. All rights reserved.</p>
+      </nav>
+    </footer>
+
+
+
+<script src="assets/js/vendor.js"></script>
+<script src="assets/js/foundation.js"></script>
+</body>
+</html>
